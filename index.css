@@ -1,0 +1,49 @@
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+
+    --body-width: 90vw;
+
+    --fs-h1: 2.5rem;
+    --fs-h2: 1.75rem;
+    --fs-body: 1.25rem;
+}
+
+@media (min-width: 900px) {
+    :root {
+        --body-width: 60vw;
+
+        --fs-h1: 3rem;
+        --fs-h2: 2rem;
+        --fs-body: 1.25rem;
+    }
+}
+
+body {
+    width: var(--body-width);
+    margin: auto;
+    font-family: var(--ff-primary);
+}
+
+h1 {
+    font-size: var(--fs-h1);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+p, input {
+    font-size: var(--fs-body);
+}
+
+input {
+    font-family: var(--ff-secondary);
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.proposal-button {
+    display: flex;
+    justify-content: center;
+}
