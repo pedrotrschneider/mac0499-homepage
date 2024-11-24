@@ -27,6 +27,7 @@ body {
 
 h1 {
     font-size: var(--fs-h1);
+    text-align: center;
 }
 
 h2 {
@@ -40,10 +41,22 @@ p, input {
 input {
     font-family: var(--ff-secondary);
     padding: 0.75rem;
-    margin-bottom: 1rem;
+    cursor: pointer;
+    margin: auto;
 }
 
-.proposal-button {
+.button {
     display: flex;
+    padding: auto;
     justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 50%;
 }
