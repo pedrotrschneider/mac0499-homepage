@@ -31,18 +31,30 @@
 
     <div class="row">
         <div class="column" style="flex: 58%; padding-right: 2%;">
-            <p style="margin-top: 0;">A maioria dos jogos digitais 3D modernos, bem como outras aplicações gráficas 3D de tempo real, utilizam algoritmos de renderização baseados na rasterização de cenas. Esses algoritmos consistem em uma série de transformações lineares sobre os elementos da cena (geralmente triângulos) para realizar a projeção de tais elementos na “tela” visualizada pelo usuário. Essa forma de renderização de cenários tridimensionais, embora extremamente eficiente como resultado de décadas de otimização, é, muitas vezes tomada como única, e acaba por impor restrições proibitivas no processo criativo em algumas aplicações.</p>
+            <p style="margin-top: 0;">Este trabalho buscou investigar a viabilidade do uso da técnica de renderização <i>Ray Marching, </i>com foco no algoritmo <i>Sphere Tracing</i>, para aplicações interativas em tempo real, como jogos digitais. O principal objetivo foi avaliar os benefícios e as limitações dessa abordagem em comparação com os métodos tradicionais, como rasterização e <i>Ray Tracing, a</i>mplamente utilizados na indústria de jogos. Para tal, foi desenvolvido um renderizador como prova de conceito utilizando a técnica de <i>Ray Marching a</i>celerado por <i>Sphere Tracing</i>.</p>
             
-            <p> Este trabalho busca explorar outras possibilidades de algoritmos de renderização menos utilizados. Mais especificamente, busca-se realizar uma pesquisa e desenvolvimento de um renderizador baseado em ray-marching, um algoritmo de traçamento de raios utilizando campos de distâncias de formas geométricas.</p>
+            <p> A metodologia adotada envolveu uma revisão teórica das principais técnicas de renderização, explorando os fundamentos do <i>Ray Marching</i>, suas variantes (como marcha uniforme e <i>Sphere Tracing</i>) e conceitos relacionados, como funções de distância e operações de manipulação de domínios. O trabalho incluiu a implementação de algoritmos em linguagens como Slang e Rust para a definição de formas primitivas, transformações geométricas, materiais e modelos 3D.</p>
             
-            <p>O objetivo final do trabalho é avaliar a viabilidade desta forma de renderização de gráficos para aplicações em tempo real, como jogos digitais, comparando seus benefícios e problemas quando comparado com o estado da arte.</p>
+            <p>Os resultados obtidos demonstraram que o <i>Ray Marching</i>, embora apresente limitações em termos de desempenho em cenas modeladas tradicionalmente com malhas de triângulos, oferece vantagens significativas no campo criativo, permitindo a renderização eficiente de superfícies implícitas e estruturas complexas, como fractais. Além disso, foi constatado que a técnica é capaz de simular efeitos avançados de iluminação, como sombras suaves e reflexões, com maior controle sobre os detalhes da cena.</p>
+
+            <p>Conclui-se que o <i>Ray Marching</i>, em particular o <i>Sphere Tracing</i>, é uma abordagem promissora para aplicações que buscam inovação visual e flexibilidade criativa. No entanto, seu uso em cenários comerciais ainda depende de avanços no desenvolvimento de   <i>hardware</i> dedicado e integração com os padrões atuais da indústria. Este trabalho contribuiu para o entendimento e a exploração de novas possibilidades na renderização gráfica, destacando o potencial do <i>Ray Marching</i> como uma alternativa inovadora para o desenvolvimento de jogos digitais.</p>
             
             <p>A figura ao lado mostra três exemplos de images renderizadas utilizando Ray Marching. A primeira mostra uma cena de caracol subindo em uma folha. Nela é possível ver alguns efeitos de iluminação como transparência e refração das gotas de chuva, e sub-surface scattering na pele do caracol. A segunda imagem mostra um fractal tridimensional renderizado na forma de planeta. A terceira imagem mostra um mundo tridimensional</p>
 
-            <div style="height: 3em;"></div>
+        </div>
+        <div class="column" style="flex: 40%;">
+            <img src="exemplos-ray-marching.png" alt="Exemplos de ray marching" width="100%">
+        </div>
+    </div>
+
+    <div style="height: 3em;"></div>
     
             <div class="button">
-                <a href="monografia-tcc-pedro-schneider.pdf" target="_blank"><input type="button" value="Monografia completa" /></a>
+                <a href="monografia-tcc-pedro-schneider-digital.pdf" target="_blank"><input type="button" value="Monografia completa" /></a>
+            </div>
+
+            <div class="button">
+                <a href="monografia-tcc-pedro-schneider-digital-impressao.pdf" target="_blank"><input type="button" value="Monografia completa (versão para impressão)" /></a>
             </div>
 
             <div class="button">
@@ -52,11 +64,6 @@
             <div class="button">
                 <a href="https://linktr.ee/pedrotrschneider_usp" target="_blank"><input type="button" value="Materiais adicionais" /></a>
             </div>
-        </div>
-        <div class="column" style="flex: 40%;">
-            <img src="exemplos-ray-marching.png" alt="Exemplos de ray marching" width="100%">
-        </div>
-    </div>
 
     <h2>Pôster apresentado (clique na imagem para baixar o PDF)</h2>
 
